@@ -1,10 +1,11 @@
 import React from 'react'
 import photo from './photo.png'
+import Footer from "./Footer";
 
 export default function About() {
   return (
     <>
-        <div className="d-flex justify-content-around" style={{marginTop:"150px"}}>
+        <div className="d-flex justify-content-around" style={{marginTop:"150px", padding:"50px"}}>
 
             <div className='container'>
                 <h2 className='mt-5 ms-5'>Hi, <br />I am Aditya <br /> <br /><br /> <span style={{fontSize:"20px"}}>I am currently a first year student at IIT Bombay pursuing BTech. in Civil Engineering.
@@ -14,6 +15,7 @@ export default function About() {
                 <img style={{height:"90%", width:"90%"}} src={photo} alt="profile pic" />
             </div>
         </div>
+        <Footer/>
 
         
 

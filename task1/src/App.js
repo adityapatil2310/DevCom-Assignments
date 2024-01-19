@@ -3,7 +3,6 @@ import About from "./Components/About";
 import Navbar from "./Components/Navbar";
 import Hobbies from "./Components/Hobbies";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
-import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -15,7 +14,6 @@ function App() {
               <Route exact path="/hobbies" element={<Hobbies/>}></Route>
           </Routes>
       </BrowserRouter>
-      <Footer/>
     </>
   );
 }
