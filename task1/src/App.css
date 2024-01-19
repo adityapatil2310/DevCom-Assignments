@@ -1,5 +1,78 @@
-body{
+
+/* My styling */
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.nav-link, .navbar-brand{
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+}
+
+.navbar-brand{
+  font-size: 20px;
+}
+
+.about{
   height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.about-content{
+  max-width: 600px;
+}
+
+.about-content h1{
+  font-size: 56px;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.about-content h2{
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.about-content p{
+  font-size: 20px;
+}
+
+.socials{
+  position: absolute;
+  bottom: 40px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials a{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
+  margin-inline: 10px;
+  background: transparent;
+  border: 2px solid #0d6efd;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #0d6efd;
+  text-decoration: none; 
+  overflow: hidden;
+}
+
+.socials a:hover{
+  background: #0d6efd;
+  transition: .5s;
+  color: white;
 }
 
 footer {
@@ -13,21 +86,9 @@ footer {
   margin-top: 141px;
 }
 
-footer a {
-  /* float: left; */
-  /* Make sure that the links stay side-by-side */
-  /* display: block; */
-  /* Change the display to block, for responsive reasons (see below) */
-  color: white;
-  /* White text color */
-  /* text-align: center; */
-  /* Center the text */
-  padding: 14px 40px;
-  /* Add some padding */
-  text-decoration: none;
-  /* Remove underline */
-}
 
+
+/* Default React styling */
 
 .App {
   text-align: center;
