@@ -1,13 +1,14 @@
 import React from "react";
+import {Link} from 'react-router-dom';
 
 export default function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <Link className="navbar-brand" to="/">
             Aditya's Portfolio
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,42 +23,46 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/">
+                <Link className="nav-link" aria-current="page" to="/">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" aria-current="page" href="/">
+                <Link className="nav-link" aria-current="page" to="/education">
                   Education
-                </a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <Link
                   className="nav-link dropdown-toggle"
-                  href="/"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   Hobbies
-                  {/* 3 card items on hobby page. Read more leading to detail hobby page. */}
-                </a>
+                </Link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to="/hobbies">
+                      All Hobbies
+                    </Link>
+                  </li>
+                  <li><hr class="dropdown-divider"/></li>
+                  <li>
+                    <Link className="dropdown-item" to="/coding">
                       Coding
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to="/rubik">
                       Rubik's Cube
-                    </a>
+                    </Link>
                   </li>
                   <li></li>
                   <li>
-                    <a className="dropdown-item" href="/">
+                    <Link className="dropdown-item" to="/basketball">
                       Basketball
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </li>
