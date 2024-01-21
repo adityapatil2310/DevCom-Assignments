@@ -12,7 +12,7 @@ export default function Hobbies() {
                     <p className="card-text">
                         I had an interest in coding/programming since childhood...
                     </p>
-                    <a href="/" className="btn btn-primary">
+                    <a href="/coding" className="btn btn-primary">
                         Read More
                     </a>
                     </div>
@@ -26,7 +26,7 @@ export default function Hobbies() {
                     <p className="card-text">
                         At first I didn't know what it actually meant to solve a Rubik's cube...
                     </p>
-                    <a href="/" className="btn btn-primary">
+                    <a href="/rubik" className="btn btn-primary">
                         Read More
                     </a>
                     </div>
@@ -40,7 +40,7 @@ export default function Hobbies() {
                     <p className="card-text">
                         I was introduced to basketball as one of the compulsory sports in school...
                     </p>
-                    <a href="/" className="btn btn-primary">
+                    <a href="/basketball" className="btn btn-primary">
                         Read More
                     </a>
                     </div>

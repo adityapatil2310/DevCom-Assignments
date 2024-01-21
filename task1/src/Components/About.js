@@ -1,5 +1,5 @@
 import React from 'react'
-import photo from './photo.png'
+import photo from './assets/photo.png'
 
 export default function About() {
   return (
@@ -13,8 +13,8 @@ export default function About() {
                     <p>I am currently a first year student at IIT Bombay pursuing BTech. in Civil Engineering.
                     <br />Feel free to explore this website to know more about me.</p>
                 </div>
-                <div>
-                    <img style={{height:"70%", width:"60%"}} src={photo} alt="profile pic" />
+                <div className='profileImg'>
+                    <img id="profile"style={{height:"70%", width:"60%"}} src={photo} alt="profile pic" />
                 </div>
             </div>
             <div className="socials">
