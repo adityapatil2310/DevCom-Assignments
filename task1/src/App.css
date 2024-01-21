@@ -83,7 +83,7 @@ nav{
 
 .profileImg{
   position: absolute;
-  right: 0;
+  right: 150px;
   bottom: 200;
   width: 295px;
   background-repeat: no-repeat;
@@ -96,17 +96,6 @@ nav{
   background-position-y: 15px ;
   background-repeat: no-repeat;
   border-radius: 50%;
-}
-
-footer {
-  display: flex;
-  /* overflow: hidden; */
-  /* Hide overflow */
-  background-color: #383838;
-  /* Dark background color */
-  text-align: center;
-  justify-content: center;
-  margin-top: 141px;
 }
 
 /* EDUCATION */
@@ -141,6 +130,57 @@ footer {
 .year{
   color: #0d6efd;
 }
+
+/* HOBBY */
+
+.hobby-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70vw;
+}
+
+.hobby-text{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#bb-img{
+  height: 40%;
+  width: 40%;
+  margin-bottom: 40px;
+  border-radius: 10%;
+}
+
+#rubik-img{
+  height: 50%;
+  width: 50%;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+#coding-img{
+  height: 40%;
+  width: 40%;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.btn-c{
+  margin-top: 10%;
+}
+
+.btn-r{
+  margin-top: 10%;
+}
+
+
+
+
+
+
+
+
 
 
 
