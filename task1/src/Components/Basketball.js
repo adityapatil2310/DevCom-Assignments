@@ -3,6 +3,7 @@ import React from "react";
 export default function Basketball() {
   return (
     <div className="container my-5 hobby-content">
+      <h1>Basketball</h1>
       <img
         id="bb-img"
         src="https://static.timesofisrael.com/www/uploads/2023/11/AP23015645555283.jpg"

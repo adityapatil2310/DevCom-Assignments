@@ -5,10 +5,10 @@ export default function Navbar() {
   return (
     <div className="header">
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <Link className="navbar-brand" to="/">
-          Aditya's Portfolio
-        </Link>
         <div className="container-fluid">
+          <Link className="navbar-brand" to="/">
+            Aditya's Portfolio
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

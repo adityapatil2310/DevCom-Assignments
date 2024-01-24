@@ -3,6 +3,7 @@ import React from "react";
 export default function Coding() {
   return (
     <div className="container my-5 hobby-content">
+      <h1>Coding</h1>
       <img
         id="coding-img"
         src="https://www.codingdojo.com/blog/wp-content/uploads/code-3.jpg"

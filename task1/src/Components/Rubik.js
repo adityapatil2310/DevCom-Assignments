@@ -3,6 +3,7 @@ import React from "react";
 export default function Rubik() {
   return (
     <div className="container my-5 hobby-content">
+      <h1>Rubik's Cube</h1>
       <img
         id="rubik-img"
         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPTMRcL87OGsnsNZ4ZiOjaIQlGBwO50_xNkQ&usqp=CAU"

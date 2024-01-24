@@ -14,6 +14,7 @@ function App() {
       <BrowserRouter>
         <Navbar/>
           <Routes>
+            {/* Adding routes to each section, so that only the content below the navbar loads and not the whole webpage. Thus, improving user experience */}
               <Route exact path="/" element={<About/>}></Route>
               <Route exact path="/hobbies" element={<Hobbies/>}></Route>
               <Route exact path="/education" element={<Education/>}></Route>
