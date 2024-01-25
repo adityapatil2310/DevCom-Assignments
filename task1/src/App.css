@@ -232,14 +232,17 @@
 
 /* Queries for 'max: 425px' are as viewed on actual mobile, not as on Google Chrome's inspect element */
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 425px) and (min-width:376px) {
+  nav{
+    width: 132%;
+  }
+}
+
+@media screen and (max-width:425px) {
   .profileImg{
     position:absolute;
     left: 60%;
     bottom: 43%;
-  }
-  nav{
-    width: 132%;
   }
   .socials{
     flex-direction: column;
@@ -268,5 +271,14 @@
   #rubik-img{
     height: 70%;
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  nav{
+    width: 139%;
+  }
+  .profileImg{
+    bottom: 47%;
   }
 }
