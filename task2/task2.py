@@ -69,7 +69,15 @@ class Device:
 
 class SyncService:
     def __init__(self):
-        pass
+        self.aggregated_data = [] # list to store the data received from all devices
+
+    def _handle_probe(self, data: dict) -> dict:
+        from_index = data['from']
+        update_data = self.aggregated_data[from_index:]
+        return {'type': 'update', 'from': from_index, 'data': update_data}
+
+    def _handle_record(self, data: dict):
+        self.aggregated_data.append(data['data'])
        
     def onMessage(self, data: dict):
         """Handle messages received from devices.
@@ -77,8 +85,10 @@ class SyncService:
         No return value required on handling a `record`."""
         # write code to handle a 'probe' request and return nothing for 'record'
 
-        # Write the code here
-        raise NotImplementedError()
+        if data['type'] == 'probe':
+            return self._handle_probe(data)
+        elif data['type'] == 'record':
+            self._handle_record(data)
 
 
 
