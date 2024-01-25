@@ -1,7 +1,7 @@
-# Getting Started with Create React App
+# Task 1 - Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Please install node_modules and react-routerd-dom using `npm install` `npm install react-routerd-dom` respectively before starting the react app.
+This project created with the help of [React](https://github.com/facebook/create-react-app) and [Bootstrap](https://getbootstrap.com).\
+Please install node_modules and react-router-dom using `npm install`  `npm install react-router-dom` respectively before starting the react app.
 
 ## Available Scripts
 
