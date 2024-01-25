@@ -194,7 +194,7 @@
 
 
 /* Responsiveness with media queries */
-
+/* The website is made responsive only for actual device sizes which are available not for every width and height */
 
 @media screen and (max-width: 1250px) {
   .about{
